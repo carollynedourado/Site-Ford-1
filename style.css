@@ -1,0 +1,297 @@
+/* *projeto Cimatec Front-end* */
+html, body, div, span, applet, object,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+/*importando a fonte*/
+
+/*---------Lançamento---------*/
+
+.carros{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px;
+}
+
+.galeria-imagens{
+    width: 260px;
+    flex-direction: column;
+}
+
+.galeria-imagens img{
+    width: 100%;
+    display: block;
+}
+
+.informacoes{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: start;
+    column-gap: 8px;
+    margin-top: 10px;
+}
+
+.informacoes input{
+    transform: scale (2.2);
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto span{
+    font-size: 14px;
+    color: #2f5fb3;
+    line-height: 1.3;
+}
+
+.preco{
+    font-size: 11px;
+    color: black;
+    margin-top: 6px;
+}
+
+.info_img{
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+}
+
+.video-container {
+    width: 100%;
+    margin: 0%;
+    margin-top: 2%;
+}
+
+.video-container iframe{
+    width: 100%;
+    height: 560px;
+    display: block;
+}
+
+/* ---------Contato--------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+.espacamentoTabelaCarro{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.espacamentoTabela{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.espacamentoCarro{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+
+.fotoCarro img{
+    width: 300px;
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.larguraTabela{
+    width: 400px;
+}
+
+/* Formulário e Botões */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* ---------Corpo--------- */
+
+
+body{
+	display: flex;
+	flex-direction: column;
+    min-height: 100vh;
+		/* altura da tela, viewport hight, 100% da tela do computador */
+	background-color: rgb(255, 255, 255);
+}
+
+main{
+	background-image: center;
+	flex: 1; 
+	 /* Faz o main crescer e empurrar o footer para baixo */
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* ---------Ranger Preta / Home--------- */
+
+.espacamento {
+	margin: 5%;
+	display: flex;
+	align-items: center; 
+	flex-direction: column;
+		/* alinhamento entre os itens */
+	justify-content: space-between;
+	gap: 10px; 
+}
+
+.rangerPreta img{
+    width: 75%;
+    display: block;
+    margin: 20px auto;
+}
+
+.descricao{
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+    font-size: 13px;
+}
+.descricao2{
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+    font-size: 15px;
+    margin-top: 24px;
+}
+
+/* ---------Responsividade--------- */
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Melhora a rolagem no iOS */
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        gap: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .galeria-imagens {
+        flex-direction: column;
+    }
+    
+    .galeria-imagens img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+        form {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    main {
+        padding: 10px; 
+    }
+}
+
+
