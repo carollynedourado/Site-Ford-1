@@ -1,15 +1,13 @@
+/*CSS padrão para todas as páginas*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
 
 header, body, footer{
 	font-family: "Roboto", sans-serif;
-}
-
-<!------Cabeçalho----->
+} 
 
 header{
-	background-color:rgb(255, 255, 255) ;
-	display: flex;
-    padding: 40px;
+	background-color:rgb(255, 255, 255) ; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +31,7 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    color:rgb(33, 33, 160) ;
+    color:rgb(33, 33, 160);
     font-weight: bold;
 }
 
@@ -41,13 +39,12 @@ nav a{
 
 footer{
 	background-color:rgb(33, 33, 160) ;
-	height: 40px;
     color: white;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-	padding: 0.5% 0.5%;
+    padding: 10px;
 }
 
 footer div{
